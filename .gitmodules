@@ -4,3 +4,6 @@
 [submodule "AgameEngine/vendor/GLFW"]
 	path = AgameEngine/vendor/GLFW
 	url = https://github.com/TheCherno/GLFW
+[submodule "AgameEngine/vendor/imgui"]
+	path = AgameEngine/vendor/imgui
+	url = https://ghfast.top/https://github.com/TheCherno/imgui
