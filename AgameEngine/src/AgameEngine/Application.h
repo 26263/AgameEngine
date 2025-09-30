@@ -2,15 +2,40 @@
 
 #include "Core.h"
 
+#include "Window.h"
+#include "AgameEngine/LayerStack.h"
+#include "AgameEngine/Event/Event.h"
+#include "AgameEngine/Event/ApplicationEvent.h"
+
+
 namespace AgameEngine {
 
-	class __declspec(dllexport) Application
+	class AGE_API Application
 	{
 	public:
 		Application();
 		virtual ~Application();
 
 		void Run();
+
+		void OnEvent(Event& e);
+
+		void PushLayer(Layer* layer);
+		void PushOverLay(Layer* layer);
+		
+		inline static Application& Get() {
+			return *s_Instance;
+		}
+		inline Window& GetWindow() { return *m_Window; }
+
+	private:
+		bool OnWindowClose(WindowCloseEvent& e);
+		
+		std::unique_ptr<Window> m_Window;
+		bool m_Running = true;
+		LayerStack m_LayerStack;
+
+		static Application* s_Instance;
 	};
 
 

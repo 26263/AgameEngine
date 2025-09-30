@@ -1,36 +1,93 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="源文件">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    <Filter Include="AgameEngine">
+      <UniqueIdentifier>{1662112B-8217-8A20-0B0C-84F777C08024}</UniqueIdentifier>
     </Filter>
-    <Filter Include="头文件">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="AgameEngine\Event">
+      <UniqueIdentifier>{E79B594F-53B2-57E5-9C29-E306087F286D}</UniqueIdentifier>
     </Filter>
-    <Filter Include="资源文件">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    <Filter Include="AgameEngine\ImGui">
+      <UniqueIdentifier>{C08F9C4F-2CA6-9AE5-751D-2607E1726B6D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\Windows">
+      <UniqueIdentifier>{64FBD71A-50F4-F66C-7926-DCF1657ED678}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\AgameEngine\Core.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
+    <ClInclude Include="src\AgameEngine.h" />
     <ClInclude Include="src\AgameEngine\Application.h">
-      <Filter>头文件</Filter>
+      <Filter>AgameEngine</Filter>
     </ClInclude>
-    <ClInclude Include="src\AgameEngine.h">
-      <Filter>头文件</Filter>
+    <ClInclude Include="src\AgameEngine\Core.h">
+      <Filter>AgameEngine</Filter>
     </ClInclude>
     <ClInclude Include="src\AgameEngine\EntryPoint.h">
-      <Filter>头文件</Filter>
+      <Filter>AgameEngine</Filter>
     </ClInclude>
+    <ClInclude Include="src\AgameEngine\Event\ApplicationEvent.h">
+      <Filter>AgameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\Event\Event.h">
+      <Filter>AgameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\Event\KeyEvent.h">
+      <Filter>AgameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\Event\MouseEvent.h">
+      <Filter>AgameEngine\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\ImGui\ImGuiLayer.h">
+      <Filter>AgameEngine\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\Layer.h">
+      <Filter>AgameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\LayerStack.h">
+      <Filter>AgameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\Log.h">
+      <Filter>AgameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\AgameEngine\Window.h">
+      <Filter>AgameEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\Windows\WindowsWindow.h">
+      <Filter>Platform\Windows</Filter>
+    </ClInclude>
+    <ClInclude Include="src\agepch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AgameEngine\Application.cpp">
-      <Filter>源文件</Filter>
+      <Filter>AgameEngine</Filter>
     </ClCompile>
+    <ClCompile Include="src\AgameEngine\ImGui\ImGuiLayer.cpp">
+      <Filter>AgameEngine\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AgameEngine\Layer.cpp">
+      <Filter>AgameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AgameEngine\LayerStack.cpp">
+      <Filter>AgameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\AgameEngine\Log.cpp">
+      <Filter>AgameEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
+      <Filter>Platform\Windows</Filter>
+    </ClCompile>
+    <ClCompile Include="src\agepch.cpp" />
   </ItemGroup>
 </Project>
